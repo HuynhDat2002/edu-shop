@@ -1,6 +1,7 @@
 'use client'
 import Image from "next/image";
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@heroui/react";
+import { Bars3BottomRightIcon } from "@heroicons/react/24/solid";
 
 export default function Header() {
     const items = [
@@ -57,12 +58,12 @@ export default function Header() {
                             </p>
                         </div>
                     </div>
-                    <div className="md:hidden pr-5 cursor-pointer">
+                    <div className="md:hidden pr-5">
                         <Dropdown>
                             <DropdownTrigger>
-                                <div className="cursor-pointer shadow-md border-1 border-gray-300 rounded-lg p-2 flex flex-row items-center justify-center">
-                                    <Button variant="bordered">Giá</Button>
-                                </div>
+                                <Button className="cursor-pointer border-1 border-gray-300 rounded-lg p-2 shadow-md" variant="bordered">
+                                    <Bars3BottomRightIcon className="size-6 text-black" />
+                                </Button>
                             </DropdownTrigger>
                             <DropdownMenu aria-label="Dynamic Actions" items={items}
                                 className="bg-white border-1 border-gray-300 rounded-lg shadow-md"
@@ -71,7 +72,7 @@ export default function Header() {
                                     <DropdownItem
                                         key={item.key}
                                         className={"text-danger p-2 border-b border-gray-300 hover:bg-gray-100"}
-                                        
+
                                     >
                                         {item.label}
                                     </DropdownItem>
