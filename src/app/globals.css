@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+   --gradient-fancy: linear-gradient(to right, #ec4899, #a855f7, #3b82f6);
+
 }
 
 @theme inline {
@@ -14,7 +16,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1a1b24;
     --foreground: #ededed;
   }
 }
@@ -23,4 +25,29 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@theme {
+  --font-family-karla: "Karla", sans-serif;
+  
+  /* Coffee colors */
+  --color-coffee-50: #e8d6d0;
+  --color-coffee-200: #c89f94;
+  --color-coffee-400: #a25f4b;
+  --color-coffee-600: #744838;
+  
+  /* ctBlue colors */
+  --color-ctBlue-header: #152440;
+  --color-ctBlue-logo: #11A3A3;
+  --color-ctBlue-logo-hover: #3ad6ca;
+  
+  --color-background: #1a1b24;
+  /* Background images */
+  --gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --gradient-conic: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
+   --gradient-fancy: linear-gradient(to right, #ec4899, #a855f7, #3b82f6);
+}
+
+.ct-button-search {
+ @apply cursor-pointer text-white end-1.5 top-1 bottom-1 bg-ctBlue-header hover:bg-ctBlue-header shadow-md focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
 }
