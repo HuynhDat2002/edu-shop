@@ -40,8 +40,8 @@ export default function Header() {
                 </div>
 
                 {/* more */}
-                <div className="  font-semibold items-center ">
-                    <div className="hidden md:block md:flex md:flex-row md:gap-3 md:pr-5">
+                <div className="flex  font-semibold items-center ">
+                    <div className=" md:flex md:justify-center md:items-center hidden md:block md:flex md:flex-row md:gap-3 md:pr-5">
                         <div className="cursor-pointer transition duration-300 ease-in-out hover:p-0.5 hover:bg-gradient-to-r hover:from-blue-300 hover:to-purple-500 hover:rounded-3xl">
                             <p className=" hover:text-black hover:p-1 hover:bg-white hover:rounded-2xl">
                                 Trang chủ
