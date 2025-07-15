@@ -3,52 +3,36 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <footer className=" w-screen border-t border-gray-300 row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      <footer className="flex flex-col w-screen border-t border-gray-300  flex gap-2 justify-center items-center mb-3">
+        <div className=" cursor-pointer flex flex-row justify-center items-center">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/logo.svg"
+            alt="logo"
+            width={30}
+            height={30}
+            className="rounded-full"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          <p className="text-lg font-bold ml-2" >
+            EduShop
+          </p>
+        </div>
+        <div className="flex flex-row gap-2">
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src="/github-mark.png"
+            alt="footer"
+            width={20}
+            height={20}
+            className="rounded-lg "
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+          <a
+            href="https://github.com/HuynhDat2002"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 cursor-pointer text-lg"
+          >
+            https://github.com/HuynhDat2002
+          </a>
+        </div>
       </footer>
     </>
   )

@@ -1,0 +1,327 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "JavaScript Fundamentals for Beginners",
+      "price": 299000,
+      "thumb": "https://i.pinimg.com/736x/41/26/96/412696b9ec5e37e2952fb4a689053f98.jpg",
+      "poster": "https://i.pinimg.com/1200x/3f/f3/38/3ff338fded7cab6c231606b35ebe18ab.jpg",
+      "shortDescription": "Học JavaScript từ cơ bản đến nâng cao, phù hợp cho người mới bắt đầu.",
+      "longDescription": "Khóa học JavaScript toàn diện dành cho người mới bắt đầu. Bạn sẽ học về cú pháp cơ bản, DOM manipulation, ES6+, async/await, và các khái niệm quan trọng khác. Khóa học bao gồm nhiều bài tập thực hành và dự án thực tế để giúp bạn nắm vững kiến thức.",
+      "averageRating": 4.3,
+      "reviews": [
+        {
+          "userId": 1,
+          "userName": "Nguyễn Văn An",
+          "rating": 5,
+          "comment": "Khóa học rất chi tiết và dễ hiểu. Giảng viên giải thích rất rõ ràng!",
+          "date": "2024-11-15"
+        },
+        {
+          "userId": 2,
+          "userName": "Trần Thị Bình",
+          "rating": 4,
+          "comment": "Nội dung hay, tuy nhiên có một vài phần hơi khó theo kịp.",
+          "date": "2024-11-20"
+        },
+        {
+          "userId": 3,
+          "userName": "Lê Minh Cường",
+          "rating": 4,
+          "comment": "Tuyệt vời! Sau khóa học tôi đã có thể làm được nhiều dự án JavaScript.",
+          "date": "2024-12-01"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Python Programming Complete Course",
+      "price": 399000,
+      "thumb": "https://i.pinimg.com/736x/2d/d8/03/2dd8031b5e88f0104d083e4ed6233bc0.jpg",
+      "poster": "https://i.pinimg.com/736x/7b/b5/ff/7bb5ff28c400958bd75d5df77277429c.jpg",
+      "shortDescription": "Khóa học Python toàn diện từ cơ bản đến chuyên sâu với nhiều dự án thực tế.",
+      "longDescription": "Khóa học Python hoàn chỉnh bao gồm cú pháp cơ bản, OOP, xử lý file, web scraping, làm việc với database, và phát triển ứng dụng web với Flask/Django. Khóa học kèm theo 5 dự án thực tế giúp bạn xây dựng portfolio mạnh mẽ.",
+      "averageRating": 4.7,
+      "reviews": [
+        {
+          "userId": 1,
+          "userName": "Nguyễn Văn An",
+          "rating": 5,
+          "comment": "Khóa học chất lượng cao, giúp tôi từ zero đến có thể làm việc với Python.",
+          "date": "2024-10-28"
+        },
+        {
+          "userId": 2,
+          "userName": "Trần Thị Bình",
+          "rating": 4,
+          "comment": "Nội dung phong phú, giảng viên nhiệt tình. Rất đáng đầu tư!",
+          "date": "2024-11-10"
+        },
+        {
+          "userId": 3,
+          "userName": "Lê Minh Cường",
+          "rating": 5,
+          "comment": "Tuyệt vời! Giúp tôi có thể chuyển sang Python developer.",
+          "date": "2024-11-25"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "React.js Modern Development",
+      "price": 449000,
+      "thumb": "https://i.pinimg.com/736x/f4/28/5a/f4285aad8e0d976273a4cea542cc6bca.jpg",
+      "poster": "https://i.pinimg.com/736x/e8/19/75/e8197585dae7d7060749fab863976f70.jpg",
+      "shortDescription": "Học React.js hiện đại với Hooks, Context API, và các công cụ mới nhất.",
+      "longDescription": "Khóa học React.js từ cơ bản đến nâng cao, bao gồm React Hooks, Context API, Redux Toolkit, React Router, và testing. Bạn sẽ xây dựng 3 ứng dụng thực tế: Todo App, E-commerce Store, và Social Media Dashboard.",
+      "averageRating": 4.7,
+      "reviews": [
+        {
+          "userId": 1,
+          "userName": "Nguyễn Văn An",
+          "rating": 5,
+          "comment": "Khóa học tuyệt vời! Giúp tôi nắm vững React và có thể làm dự án thực tế.",
+          "date": "2024-12-05"
+        },
+        {
+          "userId": 2,
+          "userName": "Trần Thị Bình",
+          "rating": 4,
+          "comment": "Cập nhật xu hướng mới nhất, giảng viên rất có kinh nghiệm.",
+          "date": "2024-11-25"
+        },
+        {
+          "userId": 3,
+          "userName": "Lê Minh Cường",
+          "rating": 5,
+          "comment": "React hooks được giải thích rất chi tiết và dễ hiểu.",
+          "date": "2024-12-10"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Node.js Backend Development",
+      "price": 499000,
+      "thumb": "https://i.pinimg.com/736x/e3/a2/49/e3a2498d2fabe3948c98e784f7f51808.jpg",
+      "poster": "https://i.pinimg.com/1200x/b7/25/46/b72546039e230bfcbd512ac1741515ac.jpg",
+      "shortDescription": "Phát triển backend với Node.js, Express, MongoDB và các công nghệ hiện đại.",
+      "longDescription": "Khóa học phát triển backend toàn diện với Node.js và Express.js. Bạn sẽ học cách xây dựng RESTful APIs, làm việc với MongoDB, authentication & authorization, file upload, real-time chat với Socket.io, và deploy lên cloud.",
+      "averageRating": 4.3,
+      "reviews": [
+        {
+          "userId": 1,
+          "userName": "Nguyễn Văn An",
+          "rating": 4,
+          "comment": "Khóa học rất thực tế, giúp tôi có thể xây dựng API cho dự án của mình.",
+          "date": "2024-11-18"
+        },
+        {
+          "userId": 2,
+          "userName": "Trần Thị Bình",
+          "rating": 5,
+          "comment": "Nội dung tốt, giảng viên giải thích rõ ràng về backend concepts.",
+          "date": "2024-12-02"
+        },
+        {
+          "userId": 3,
+          "userName": "Lê Minh Cường",
+          "rating": 4,
+          "comment": "Học được nhiều kiến thức về xây dựng API và database.",
+          "date": "2024-12-08"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Java Spring Boot Masterclass",
+      "price": 599000,
+      "thumb": "https://i.pinimg.com/736x/bd/e9/75/bde975558b82fd6c2cb9c8e2a15339fc.jpg",
+      "poster": "https://i.pinimg.com/736x/29/9d/a9/299da99430bb7bbb5627c7876cc2159a.jpg",
+      "shortDescription": "Làm chủ Java Spring Boot để phát triển ứng dụng web enterprise.",
+      "longDescription": "Khóa học Java Spring Boot chuyên sâu cho việc phát triển ứng dụng enterprise. Bao gồm Spring Core, Spring Data JPA, Spring Security, microservices, testing, và deployment. Xây dựng ứng dụng quản lý học sinh hoàn chỉnh.",
+      "averageRating": 4.7,
+      "reviews": [
+        {
+          "userId": 1,
+          "userName": "Nguyễn Văn An",
+          "rating": 5,
+          "comment": "Khóa học xuất sắc! Giúp tôi chuyển đổi sang Java developer thành công.",
+          "date": "2024-10-15"
+        },
+        {
+          "userId": 2,
+          "userName": "Trần Thị Bình",
+          "rating": 4,
+          "comment": "Rất chi tiết và bám sát thực tế. Giảng viên có kinh nghiệm lâu năm.",
+          "date": "2024-11-08"
+        },
+        {
+          "userId": 3,
+          "userName": "Lê Minh Cường",
+          "rating": 5,
+          "comment": "Spring Boot framework được giảng dạy một cách hệ thống.",
+          "date": "2024-12-12"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Flutter Mobile App Development",
+      "price": 529000,
+      "thumb": "https://i.pinimg.com/736x/c7/68/72/c768729f60bd82d436ede701355b48cb.jpg",
+      "poster": "https://i.pinimg.com/736x/f4/50/50/f45050c84eecaee6b800518d5db19f24.jpg",
+      "shortDescription": "Phát triển ứng dụng mobile đa nền tảng với Flutter và Dart.",
+      "longDescription": "Khóa học Flutter từ cơ bản đến nâng cao, bao gồm Dart language, widgets, state management với Provider/BLoC, integration với Firebase, push notifications, và publish app lên store. Xây dựng 2 ứng dụng hoàn chỉnh.",
+      "averageRating": 4.0,
+      "reviews": [
+        {
+          "userId": 1,
+          "userName": "Nguyễn Văn An",
+          "rating": 4,
+          "comment": "Khóa học hay, giúp tôi hiểu rõ về Flutter. Cần cải thiện phần animation.",
+          "date": "2024-11-30"
+        },
+        {
+          "userId": 2,
+          "userName": "Trần Thị Bình",
+          "rating": 4,
+          "comment": "Tuyệt vời! Đã publish được app đầu tiên lên Play Store.",
+          "date": "2024-12-08"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "C# .NET Core Web Development",
+      "price": 479000,
+      "thumb": "https://i.pinimg.com/736x/55/d4/07/55d407c9fc0cdf2d0f0696a9b42f8083.jpg",
+      "poster": "https://i.pinimg.com/736x/07/d3/7e/07d37e3e3ea6edecddb9b62a6a6abd8c.jpg",
+      "shortDescription": "Phát triển web application với C# và .NET Core framework.",
+      "longDescription": "Khóa học C# .NET Core toàn diện bao gồm C# fundamentals, ASP.NET Core MVC, Web API, Entity Framework Core, authentication, authorization, và deployment. Xây dựng hệ thống quản lý thư viện trực tuyến.",
+      "averageRating": 4.3,
+      "reviews": [
+        {
+          "userId": 1,
+          "userName": "Nguyễn Văn An",
+          "rating": 4,
+          "comment": "Khóa học cơ bản tốt cho người mới bắt đầu với .NET.",
+          "date": "2024-11-22"
+        },
+        {
+          "userId": 2,
+          "userName": "Trần Thị Bình",
+          "rating": 5,
+          "comment": "Giảng viên giải thích rất rõ ràng, dễ hiểu cho người chuyển từ ngôn ngữ khác.",
+          "date": "2024-12-03"
+        },
+        {
+          "userId": 3,
+          "userName": "Lê Minh Cường",
+          "rating": 4,
+          "comment": "C# và .NET Core được trình bày một cách có hệ thống.",
+          "date": "2024-12-15"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "PHP Laravel Complete Guide",
+      "price": 359000,
+      "thumb": "https://i.pinimg.com/736x/1d/d5/0a/1dd50a25b526a8e6c60dd41ebe32a3e2.jpg",
+      "poster": "https://i.pinimg.com/736x/6f/45/5a/6f455a1667e37ba41f9c6b453ca3095e.jpg",
+      "shortDescription": "Làm chủ PHP Laravel framework để phát triển web application mạnh mẽ.",
+      "longDescription": "Khóa học PHP Laravel từ cơ bản đến nâng cao, bao gồm MVC pattern, Eloquent ORM, Blade templating, authentication, authorization, payment integration, và deployment. Xây dựng website bán hàng online hoàn chỉnh.",
+      "averageRating": 4.3,
+      "reviews": [
+        {
+          "userId": 1,
+          "userName": "Nguyễn Văn An",
+          "rating": 4,
+          "comment": "Khóa học thực tế, giúp tôi hiểu rõ về Laravel framework.",
+          "date": "2024-10-20"
+        },
+        {
+          "userId": 2,
+          "userName": "Trần Thị Bình",
+          "rating": 4,
+          "comment": "Nội dung hay, Laravel được giảng dạy từ cơ bản đến nâng cao.",
+          "date": "2024-11-14"
+        },
+        {
+          "userId": 3,
+          "userName": "Lê Minh Cường",
+          "rating": 5,
+          "comment": "Tuyệt vời! Đã làm được website cho công ty nhỏ của mình.",
+          "date": "2024-12-06"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "DevOps with Docker & Kubernetes",
+      "price": 649000,
+      "thumb": "https://i.pinimg.com/1200x/18/8e/3e/188e3e83963775f8423d0678d2a200f0.jpg",
+      "poster": "https://i.pinimg.com/1200x/b5/50/f1/b550f1f471537facaf09386ea3ecfeed.jpg",
+      "shortDescription": "Học DevOps với Docker, Kubernetes, CI/CD pipelines và cloud deployment.",
+      "longDescription": "Khóa học DevOps toàn diện bao gồm containerization với Docker, orchestration với Kubernetes, CI/CD pipelines, monitoring, logging, và deployment trên AWS/GCP. Thực hành với nhiều dự án thực tế trong môi trường production.",
+      "averageRating": 4.7,
+      "reviews": [
+        {
+          "userId": 1,
+          "userName": "Nguyễn Văn An",
+          "rating": 5,
+          "comment": "Khóa học chất lượng cao, giúp tôi chuyển sang DevOps Engineer.",
+          "date": "2024-11-12"
+        },
+        {
+          "userId": 2,
+          "userName": "Trần Thị Bình",
+          "rating": 4,
+          "comment": "Nội dung rất hay, tuy nhiên cần có kiến thức Linux cơ bản.",
+          "date": "2024-12-01"
+        },
+        {
+          "userId": 3,
+          "userName": "Lê Minh Cường",
+          "rating": 5,
+          "comment": "Docker và Kubernetes được giải thích rất chi tiết.",
+          "date": "2024-12-18"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Data Science with Python",
+      "price": 559000,
+      "thumb": "https://i.pinimg.com/1200x/74/a7/b2/74a7b2d8f733bcc8c984685bca93f387.jpg",
+      "poster": "https://i.pinimg.com/1200x/2f/25/5e/2f255e310dd21bb64cfeddcaddb7a1d3.jpg",
+      "shortDescription": "Khóa học Data Science với Python, pandas, NumPy, và machine learning.",
+      "longDescription": "Khóa học Data Science toàn diện với Python, bao gồm data manipulation với pandas, visualization với matplotlib/seaborn, statistical analysis, machine learning với scikit-learn, và deep learning cơ bản. Thực hành với 4 dự án phân tích dữ liệu thực tế.",
+      "averageRating": 4.7,
+      "reviews": [
+        {
+          "userId": 1,
+          "userName": "Nguyễn Văn An",
+          "rating": 5,
+          "comment": "Khóa học tuyệt vời cho người muốn bước vào lĩnh vực Data Science.",
+          "date": "2024-10-25"
+        },
+        {
+          "userId": 2,
+          "userName": "Trần Thị Bình",
+          "rating": 4,
+          "comment": "Nội dung phong phú, giảng viên có kinh nghiệm thực tế.",
+          "date": "2024-11-17"
+        },
+        {
+          "userId": 3,
+          "userName": "Lê Minh Cường",
+          "rating": 5,
+          "comment": "Sau khóa học tôi đã có thể làm analyst cho công ty. Rất hữu ích!",
+          "date": "2024-12-09"
+        }
+      ]
+    }
+  ]
+}

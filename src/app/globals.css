@@ -42,6 +42,9 @@ body {
   --color-ctBlue-logo-hover: #3ad6ca;
   
   --color-background: #1a1b24;
+
+   --breakpoint-xs: 475px;
+   
   /* Background images */
   --gradient-radial: radial-gradient(var(--tw-gradient-stops));
   --gradient-conic: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
@@ -49,5 +52,17 @@ body {
 }
 
 .ct-button-search {
- @apply cursor-pointer text-white end-1.5 top-1 bottom-1 bg-ctBlue-header hover:bg-ctBlue-header shadow-md focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+ @apply cursor-pointer text-white end-1.5 top-1 bottom-1 bg-ctBlue-header hover:bg-ctBlue-header shadow-md focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-4 py-1 ;
+}
+
+.ct-search-bar-1{
+  @apply flex justify-center items-center p-2 border-2 border-gray-300 rounded-lg bg-white shadow-md;
+}
+
+.ct-search-bar-2 {
+  @apply flex flex-col lg:flex-row gap-2;
+}
+
+.ct-ai-suggestion {
+  @apply flex flex-row gap-2 justify-center items-center rounded-lg bg-gradient-to-r from-blue-300 to-purple-500 p-3 px-10 cursor-pointer;
 }
