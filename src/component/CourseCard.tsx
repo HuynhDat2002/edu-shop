@@ -24,16 +24,24 @@ export default function CourseCard({ course }: { course: Course }) {
     // Handle Course click, e.g., navigate to Course details page
     console.log('Course:', id);
     async function addWatched() {
-      await fetch(`/api/addWatched/${course.id}`, {
-        method: 'POST'
-      });
+      await fetch(`/api/addWatched`, {
+        method: 'POST',
+        body: JSON.stringify({
+          id: id,
+        }),
+      },
+      );
     }
     addWatched()
     router.push(`/course/${id}`)
   };
   const handleWishList = async () => {
     setIsWishList(!isWishList)
-    await fetch(`/api/addToWishList/${course.id}`, { method: "POST" })
+    await fetch(`/api/addToWishList`, { method: "POST",
+       body: JSON.stringify({
+          id: course.id,
+        }),
+     })
   }
   return (
     <div

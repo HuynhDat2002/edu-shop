@@ -1,13 +1,13 @@
 'use strict'
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { Course } from "@/types";
 import { Redis } from '@upstash/redis'
 const redis = new Redis({
     url: 'https://relaxed-mastodon-16058.upstash.io',
     token: 'AT66AAIjcDEyMDMyMTUxODFmMDU0ZGQzYTlkMWJhYTQxNmMyN2QxMnAxMA',
 })
-export async function POST(request: Request, { params }: { params: { id: string } }) {
-    const id = parseInt(params.id as string);
+export async function POST(req: NextRequest) {
+   const { id } = await req.json()
     const response = await fetch(`http://localhost:3000/api/course/${id}`,{method:"GET"})
     const data = await response.json()
     const course = data.course
