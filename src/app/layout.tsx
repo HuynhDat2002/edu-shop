@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/component/Header";
 import Footer from "@/component/Footer";
 import "./globals.css";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,15 +31,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-foreground`}
       >
-        <Header/>
+        <Header />
         <div className="flex flex-col bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 min-h-screen overflow-hidden">
           <div className="w-[100%] flex mx-auto mt-10">
-            {children}
+            <Suspense fallback={<div>Loading...</div>}>
+              {children}
+            </Suspense>
           </div>
           <Footer />
 
         </div>
-      
+
       </body>
     </html>
   );

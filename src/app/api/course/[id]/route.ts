@@ -1,8 +1,8 @@
 'use strict'
 import {NextResponse} from "next/server";
 import {Course} from "@/types";
-export async function GET(request:Request,{params}:{params: { id: string }}) {
-    const id = parseInt(params.id as string);
+export async function GET(request:Request,{ params }: { params: Promise<{ id: string }> } ) {
+    const {id} = await params;
 
     console.log('id from api', id);
 
@@ -16,7 +16,7 @@ export async function GET(request:Request,{params}:{params: { id: string }}) {
         return NextResponse.json({error: 'Products not found'}, {status: 404});
     }
     // get product by id
-    const course = data.courses.find((product:Course)=>product.id===id)
+    const course = data.courses.find((product:Course)=>product.id===parseInt(id as string))
     return NextResponse.json({
         course: course
     })
