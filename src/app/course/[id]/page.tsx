@@ -6,7 +6,7 @@ import { useParams } from 'next/navigation'
 // import { Rating as ReactRating } from '@smastrom/react-rating'
 import { Rating, useTheme, useMediaQuery } from '@mui/material';
 import CommentList from '@/component/CommentList';
-
+import { toast } from 'react-toastify';
 export default function Course() {
     const params = useParams<{ id: string }>()
     const theme = useTheme();
@@ -41,14 +41,31 @@ export default function Course() {
             });
             const data = await response.json();
             console.log(data)
-            setCourse(data.course ? data.course :[]);
+            setCourse(data.course ? data.course : []);
         }
         fetchProducts();
     }, [params]);
+
+    const handleCart = (e: any) => {
+        e.preventDefault()
+        async function addToCart() {
+            const response = await fetch(`/api/addToCart`, {
+                method: 'POST',
+                body: JSON.stringify({
+                    id: course.id,
+                }),
+            });
+            const data = await response.json();
+            console.log(data)
+            if(data.status===400) toast.error(data.message)
+            if(data.status===200) toast.success(data.message)
+        }
+        addToCart();
+    }
     console.log('value', value);
     console.log('course', course);
     return (
-        <div className="flex flex-col gap-3 mt-9 2xl:mt-17">
+        <div className="flex flex-col gap-3 mt-7 2xl:mt-17">
             <div className="bg-black flex flex-col lg:flex-row justify-center items-center gap-3 xl:gap-15 lg:px-10 lg:gap-10  w-screen h-[550px] overflow-hidden p-2">
                 <Image
                     src={course.poster || "/logo.png"}
@@ -87,11 +104,19 @@ export default function Course() {
                     </div>
                     <div className="flex flex-row justify-between items-center px-2 ">
                         <p className="text-start text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent ">{course.price} VNĐ</p>
-                        <button
-                            className="flex flex-row  justify-center items-center cursor-pointer text-black end-1.5 top-1 bottom-1 bg-white hover:bg-ctBlue-header shadow-md focus:ring-2 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-2"
-                        >
-                            <span className="text-lg xl:text-2xl font-semibold">Tham gia ngay</span>
-                        </button>
+                        <div className="flex flex-row gap-5">
+                            <button
+                                onClick={(e) => handleCart(e)}
+                                className="flex flex-row  justify-center items-center cursor-pointer text-black end-1.5 top-1 bottom-1 bg-white  shadow-md focus:ring-2 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-2 py-2"
+                            >
+                                <span className="text-lg xl:text-2xl font-semibold">Thêm vào giỏ hàng</span>
+                            </button>
+                            <button
+                                className="flex flex-row  justify-center items-center cursor-pointer text-black end-1.5 top-1 bottom-1 bg-white shadow-md focus:ring-2 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-2 py-2"
+                            >
+                                <span className="text-lg xl:text-2xl font-semibold">Tham gia ngay</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
 

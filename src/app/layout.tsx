@@ -40,9 +40,9 @@ export default function RootLayout({
               <ToastContainer position="top-right" className={"text-xl"} />
             </Suspense>
           </div>
-          <Footer />
 
         </div>
+          <Footer />
 
       </body>
     </html>

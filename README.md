@@ -1,36 +1,55 @@
-# How to run the project if you want to clone code 
+# Giới thiệu các chức năng
 
-👉 **Step 1: Clone code by github link**
+👉 **1: Hiển thị danh sách sản phẩm**
+
+👉 **2: Tìm kiếm theo tên và lọc theo giá tiền**
+
+👉 **3: Gợi ý AI dựa theo danh sách yêu thích, lịch sử xem và giỏ hàng**
+
+👉 **4: Modal chi tiết sản phẩm**
+
+👉 **5: Yêu thích sản phẩm và hiển thị danh sách yêu thích**
+
+👉 **6: LỊch sử xem**
+
+👉 **7: Xử lý lỗi khi API fail**
+
+
+
+
+# Cách build và run hệ thống
+
+👉 **Step 1: Clone code từ github link**
 ```bash
 git clone https://github.com/HuynhDat2002/edu-shop.git
 ```
 
-👉 **Step 2: Install npm packages**
+👉 **Step 2: Cài đặt npm packages**
 ```bash
 npm install
 ```
 
-👉 **Step 3: Run project in dev enviroment**
+👉 **Step 3: Chạy hệ thống trong môi trường dev**
 ```bash
 npm run dev
 ```
 
-👉 **Step 4: Access to project by browser**
+👉 **Step 4: Truy cập bằng trình duyệt**
 ```bash
 http://localhost:3000
 ```
-👉 **Step: If you want to run build**
+👉 **Cách build**
 ```bash
 npm run build
 ```
 
-# Access to project through Vercel
+# Truy cập thông qua vercel
 ```bash
 https://edu-shop.vercel.app/
 ```
 
 
-# Interfaces
+# Giao diện
     Homepage Screenshot
 ![Homepage Screenshot](./public/homepage.png)
 
@@ -49,3 +68,7 @@ https://edu-shop.vercel.app/
 
     History Screenshot
 ![History Screenshot](./public/history.png)
+
+
+    Cart Screenshot
+![Cart Screenshot](./public/cart.png)

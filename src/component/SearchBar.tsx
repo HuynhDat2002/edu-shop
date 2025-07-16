@@ -5,7 +5,6 @@ import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 
-
 export default function SearchBar() {
     const [searchValue, setSearchValue] = useState("")
     const [selectedValue, setSelectedValue] = useState("")

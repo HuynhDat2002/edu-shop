@@ -1,6 +1,7 @@
 export interface Course{
       id: number,
       name: string,
+      keyword:Array<string>
       price: number,
       thumb: string,
       poster:string,

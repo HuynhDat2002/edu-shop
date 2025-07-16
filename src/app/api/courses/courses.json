@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "JavaScript Fundamentals for Beginners",
+      "keyword":["javascript"],
       "price": 299000,
       "thumb": "https://i.pinimg.com/736x/41/26/96/412696b9ec5e37e2952fb4a689053f98.jpg",
       "poster": "https://i.pinimg.com/1200x/3f/f3/38/3ff338fded7cab6c231606b35ebe18ab.jpg",
@@ -36,6 +37,7 @@
     {
       "id": 2,
       "name": "Python Programming Complete Course",
+      "keyword":["python"],
       "price": 399000,
       "thumb": "https://i.pinimg.com/736x/2d/d8/03/2dd8031b5e88f0104d083e4ed6233bc0.jpg",
       "poster": "https://i.pinimg.com/736x/7b/b5/ff/7bb5ff28c400958bd75d5df77277429c.jpg",
@@ -69,6 +71,7 @@
     {
       "id": 3,
       "name": "React.js Modern Development",
+      "keyword":["reactjs","development","javascript"],
       "price": 449000,
       "thumb": "https://i.pinimg.com/736x/f4/28/5a/f4285aad8e0d976273a4cea542cc6bca.jpg",
       "poster": "https://i.pinimg.com/736x/e8/19/75/e8197585dae7d7060749fab863976f70.jpg",
@@ -102,6 +105,7 @@
     {
       "id": 4,
       "name": "Node.js Backend Development",
+      "keyword":["nodejs","javascript","development"],
       "price": 499000,
       "thumb": "https://i.pinimg.com/736x/e3/a2/49/e3a2498d2fabe3948c98e784f7f51808.jpg",
       "poster": "https://i.pinimg.com/1200x/b7/25/46/b72546039e230bfcbd512ac1741515ac.jpg",
@@ -135,6 +139,7 @@
     {
       "id": 5,
       "name": "Java Spring Boot Masterclass",
+      "keyword":["java","springboot"],
       "price": 599000,
       "thumb": "https://i.pinimg.com/736x/bd/e9/75/bde975558b82fd6c2cb9c8e2a15339fc.jpg",
       "poster": "https://i.pinimg.com/736x/29/9d/a9/299da99430bb7bbb5627c7876cc2159a.jpg",
@@ -168,6 +173,7 @@
     {
       "id": 6,
       "name": "Flutter Mobile App Development",
+      "keyword":["flutter","mobile"],
       "price": 529000,
       "thumb": "https://i.pinimg.com/736x/c7/68/72/c768729f60bd82d436ede701355b48cb.jpg",
       "poster": "https://i.pinimg.com/736x/f4/50/50/f45050c84eecaee6b800518d5db19f24.jpg",
@@ -194,6 +200,7 @@
     {
       "id": 7,
       "name": "C# .NET Core Web Development",
+      "keyword":["c#",".net","development"],
       "price": 479000,
       "thumb": "https://i.pinimg.com/736x/55/d4/07/55d407c9fc0cdf2d0f0696a9b42f8083.jpg",
       "poster": "https://i.pinimg.com/736x/07/d3/7e/07d37e3e3ea6edecddb9b62a6a6abd8c.jpg",
@@ -227,6 +234,8 @@
     {
       "id": 8,
       "name": "PHP Laravel Complete Guide",
+      "keyword":["php","laravel"],
+
       "price": 359000,
       "thumb": "https://i.pinimg.com/736x/1d/d5/0a/1dd50a25b526a8e6c60dd41ebe32a3e2.jpg",
       "poster": "https://i.pinimg.com/736x/6f/45/5a/6f455a1667e37ba41f9c6b453ca3095e.jpg",
@@ -260,6 +269,8 @@
     {
       "id": 9,
       "name": "DevOps with Docker & Kubernetes",
+      "keyword":["devops","docker","kubernetes"],
+
       "price": 649000,
       "thumb": "https://i.pinimg.com/1200x/18/8e/3e/188e3e83963775f8423d0678d2a200f0.jpg",
       "poster": "https://i.pinimg.com/1200x/b5/50/f1/b550f1f471537facaf09386ea3ecfeed.jpg",
@@ -293,6 +304,7 @@
     {
       "id": 10,
       "name": "Data Science with Python",
+      "keyword":["datascience","python"],
       "price": 559000,
       "thumb": "https://i.pinimg.com/1200x/74/a7/b2/74a7b2d8f733bcc8c984685bca93f387.jpg",
       "poster": "https://i.pinimg.com/1200x/2f/25/5e/2f255e310dd21bb64cfeddcaddb7a1d3.jpg",

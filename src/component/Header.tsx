@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import SearchBar from "./SearchBar";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import ModalSearch from './ModalSearch'
+import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 
 export default function Header() {
     const [isOpenModalSearch, setOpenModalSearch] = useState(false)
@@ -34,7 +35,7 @@ export default function Header() {
         if (key === "wish-list") {
             router.push("/wish-list")
         }
-         if (key === "watched") {
+        if (key === "watched") {
             router.push("/watched")
         }
 
@@ -97,8 +98,23 @@ export default function Header() {
                                 Lịch sử xem
                             </p>
                         </div>
+                        <div className="border-l border-gray-500 pl-3 cursor-pointer transition duration-300 ease-in-out hover:p-0.5 hover:bg-gradient-to-r hover:from-blue-300 hover:to-purple-500 hover:rounded-3xl"
+                            onClick={() => router.push('/cart')}
+                        >
+                            <p className="hover:p-1 hover:text-black hover:bg-white hover:rounded-2xl">
+                                <ShoppingCartIcon className="size-6 text-black"/>
+                            </p>
+                        </div>
+
                     </div>
-                    <div className="md:hidden pr-5">
+                    <div className="flex flex-row gap-5 md:hidden pr-5">
+                         <div className="flex justify-center items-center pl-3 cursor-pointer transition duration-300 ease-in-out hover:p-0.5 hover:bg-gradient-to-r hover:from-blue-300 hover:to-purple-500 hover:rounded-3xl"
+                            onClick={() => router.push('/cart')}
+                        >
+                            <p className="hover:p-1 hover:text-black hover:bg-white hover:rounded-2xl">
+                                <ShoppingCartIcon className="size-6 text-black" />
+                            </p>
+                        </div>
                         <Dropdown>
                             <DropdownTrigger>
                                 <Button className="cursor-pointer border-1 border-gray-300 rounded-lg p-2 shadow-md" variant="bordered">

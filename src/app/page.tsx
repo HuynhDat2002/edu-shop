@@ -16,8 +16,8 @@ export default function Home() {
       }, []);
       console.log('Courses', courses);
   return (
-    <div className="min-h-screen  font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-10 mt-15">
+    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col gap-10 mt-15 ">
         <CourseList courses={courses}/>
       </main>
     </div>

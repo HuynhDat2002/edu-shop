@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <footer className="flex flex-col w-screen border-t border-gray-300  flex gap-2 justify-center items-center mb-3">
+      <footer className="flex flex-col bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 w-screen border-t border-gray-300  flex gap-2 justify-center items-center pb-3">
         <div className=" cursor-pointer flex flex-row justify-center items-center">
           <Image
             src="/logo.svg"
