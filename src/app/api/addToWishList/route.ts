@@ -8,9 +8,15 @@ const redis = new Redis({
 })
 export async function POST(req: NextRequest) {
     const { id } = await req.json()
-    console.log('id',id)
-    const response = await fetch(`http://localhost:3000/api/course/${id}`,{method:"GET"})
+    console.log('id', id)
+    const response = await fetch(`http://localhost:3000/api/course/${id}`, { method: "GET" })
     const data = await response.json()
+    if (data?.status === 404)
+        return NextResponse.json({
+            message: "Không thể thêm vào danh sách yêu thích lúc này",
+            status: 404
+        })
+
     const course = data.course
 
     let wishList: Array<any> = []

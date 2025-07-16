@@ -17,10 +17,6 @@ export default function Header() {
             label: "Trang chủ",
         },
         {
-            key: "about",
-            label: "Giới thiệu",
-        },
-        {
             key: "wish-list",
             label: "Đã thích",
         },
@@ -45,7 +41,7 @@ export default function Header() {
     }
     return (
         <>
-            <header className="fixed top-0 left-0 right-0 w-full bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 shadow-xs flex flex-row py-3 place-content-between border-b border-gray-200 z-10">
+            <header className="fixed top-0 left-0 right-0 w-full bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 shadow-xs flex flex-row py-2 place-content-between border-b border-gray-200 z-10">
 
                 {/* logo  */}
                 <div className=" cursor-pointer flex flex-row items-center pl-5">
@@ -82,11 +78,11 @@ export default function Header() {
                                 Trang chủ
                             </p>
                         </div>
-                        <div className="border-l border-gray-500 pl-3 cursor-pointer transition duration-300 ease-in-out hover:p-0.5 hover:bg-gradient-to-r hover:from-blue-300 hover:to-purple-500 hover:rounded-3xl">
+                        {/* <div className="border-l border-gray-500 pl-3 cursor-pointer transition duration-300 ease-in-out hover:p-0.5 hover:bg-gradient-to-r hover:from-blue-300 hover:to-purple-500 hover:rounded-3xl">
                             <p className="hover:p-1 hover:text-black hover:bg-white hover:rounded-2xl">
                                 Giới thiệu
                             </p>
-                        </div>
+                        </div> */}
                         <div className="border-l border-gray-500 pl-3 cursor-pointer transition duration-300 ease-in-out hover:p-0.5 hover:bg-gradient-to-r hover:from-blue-300 hover:to-purple-500 hover:rounded-3xl"
                             onClick={() => router.push('/wish-list')}
                         >

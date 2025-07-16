@@ -4,6 +4,8 @@ import CourseCard from "@/component/CourseCard"
 import { Course } from "@/types"
 import { useSearchParams } from "next/navigation"
 import CourseList from "@/component/CourseList"
+import { toast } from 'react-toastify';
+
 export default function Suggestion() {
     const [suggestionList, setSuggestionList] = useState([])
 
@@ -13,6 +15,7 @@ export default function Suggestion() {
                 method: 'GET'
             });
             const data = await response.json();
+            if(data.status===404)  toast.error(data.message)
             setSuggestionList(data.suggestions);
         }
         suggestion()

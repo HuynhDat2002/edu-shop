@@ -17,6 +17,7 @@ export async function GET(request:Request,{ params }: { params: Promise<{ id: st
     }
     // get product by id
     const course = data.courses.find((product:Course)=>product.id===parseInt(id as string))
+    if(!course) return NextResponse.json({error: 'Product not found'}, {status: 404});
     return NextResponse.json({
         course: course
     })

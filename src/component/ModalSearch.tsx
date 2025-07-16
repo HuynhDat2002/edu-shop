@@ -45,6 +45,7 @@ export default function ModalSearch({ isOpen, onClose }: { isOpen: boolean, onCl
     }
     const handleSuggestion = (e: any) => {
         e.preventDefault();
+        onClose()
         router.push(`/suggestions?userId=1`)
     }
     return (

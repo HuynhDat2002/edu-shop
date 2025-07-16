@@ -40,6 +40,7 @@ export async function GET(request: Request) {
     const response = await fetch(`http://localhost:3000/api/courses`,{method:"GET"})
     const data = await response.json()
     const courses = data.courses
+    if(courses.length===0) return NextResponse.json({message: 'Không thể lấy gợi ý lúc này'}, {status: 404});
     courses.sort((a:Course,b:Course)=>b.averageRating - a.averageRating)
     const result = courses.slice(0,5)
     return NextResponse.json({
